@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Dashboard</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Verdana', sans-serif;
+      background-color: #e0e0e0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      padding: 10px;
+      background: linear-gradient(45deg, #4CAF50, #2196F3);
+      color: white;
+      text-shadow: 1px 1px 2px #000;
+      border-bottom: 2px solid #333;
+      font-size: 16px;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #dcdcdc;
+      padding: 10px;
+      border-right: 2px solid #333;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 2px solid #333;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .sidebar li:hover {
+      background-color: #d0d0d0;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+
+    /* Dashboard Cards */
+    .dashboard-card {
+      background-color: #f0f0f0;
+      border: 2px solid #333;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 4px 4px 0 #999;
+    }
+
+    .dashboard-card h3 {
+      font-size: 14px;
+    }
+
+    .dashboard-card p {
+      font-size: 12px;
+    }
+
+    /* Retro Buttons */
+    .retro-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #f06, #f79);
+      border: 2px solid #333;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px #000;
+      box-shadow: 2px 2px 0 #999;
+      cursor: pointer;
+    }
+
+    .retro-button:hover {
+      background: linear-gradient(45deg, #f79, #f06);
+    }
+
+    /* Retro Charts */
+    .chart {
+      background-color: #f0f0f0;
+      border: 2px solid #333;
+      height: 200px;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .chart::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0, 0, 0, 0.1) 10px, rgba(0, 0, 0, 0.1) 20px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #333;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Retro Dashboard</h2>
+      <ul>
+        <li>Dashboard</li>
+        <li>Inventory</li>
+        <li>Expenses</li>
+        <li>Sales</li>
+        <li>Customers</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>Main Dashboard</h1>
+      <div class="dashboard-card">
+        <h3>Total Sales</h3>
+        <p>$50,000</p>
+        <a href="#" class="retro-button">View Details</a>
+      </div>
+
+      <div class="dashboard-card">
+        <h3>Inventory Levels</h3>
+        <p>1200 Items</p>
+        <div class="chart"></div>
+      </div>
+
+      <div class="dashboard-card">
+        <h3>Monthly Expenses</h3>
+        <p>$15,000</p>
+        <div class="chart"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tron-Inspired Table with Actions</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #000;
+      color: #00f9ff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    /* Neon Glow Effects */
+    h2,
+    th,
+    td,
+    button {
+      text-shadow: 0 0 5px #00f9ff, 0 0 10px #00f9ff, 0 0 20px #00f9ff, 0 0 40px #00f9ff;
+    }
+
+    /* Table Container */
+    .table-container {
+      width: 100%;
+      max-width: 800px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border: 2px solid #00f9ff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 20px #00f9ff;
+    }
+
+    .table-container h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #00f9ff;
+    }
+
+    th {
+      background-color: rgba(0, 0, 0, 0.8);
+      font-weight: bold;
+    }
+
+    tr:hover {
+      background-color: rgba(0, 249, 255, 0.1);
+    }
+
+    /* Action Buttons */
+    .action-button {
+      padding: 5px 15px;
+      color: #00f9ff;
+      background-color: transparent;
+      border: 1px solid #00f9ff;
+      border-radius: 5px;
+      text-shadow: 0 0 5px #00f9ff;
+      box-shadow: 0 0 10px #00f9ff, inset 0 0 10px #00f9ff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-right: 5px;
+    }
+
+    .action-button:hover {
+      background-color: rgba(0, 249, 255, 0.2);
+    }
+
+    /* Retro Grid Background */
+    .grid-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(0deg, transparent 24%, #00f9ff 25%, #00f9ff 26%, transparent 27%, transparent),
+        linear-gradient(90deg, transparent 24%, #00f9ff 25%, #00f9ff 26%, transparent 27%, transparent);
+      background-size: 50px 50px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .table-container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Background Grid -->
+  <div class="grid-bg"></div>
+
+  <!-- Table Section -->
+  <div class="table-container">
+    <h2>Tron-Inspired Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>John Doe</td>
+          <td>john.doe@example.com</td>
+          <td>Active</td>
+          <td>
+            <button class="action-button">Edit</button>
+            <button class="action-button">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Jane Smith</td>
+          <td>jane.smith@example.com</td>
+          <td>Inactive</td>
+          <td>
+            <button class="action-button">Edit</button>
+            <button class="action-button">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>Mike Johnson</td>
+          <td>mike.johnson@example.com</td>
+          <td>Pending</td>
+          <td>
+            <button class="action-button">Edit</button>
+            <button class="action-button">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>004</td>
+          <td>Emily Davis</td>
+          <td>emily.davis@example.com</td>
+          <td>Active</td>
+          <td>
+            <button class="action-button">Edit</button>
+            <button class="action-button">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop Website Builder with Grid</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="sidebar">
+    <h2>Elements</h2>
+    <div class="draggable" draggable="true" data-type="text">Text</div>
+    <div class="draggable" draggable="true" data-type="image">Image</div>
+    <div class="draggable" draggable="true" data-type="container">Container</div>
+    <input type="file" id="imageUpload" accept="image/*" style="margin-top: 10px;">
+    <h2>Grid Controls</h2>
+    <button id="addRow">Add Row</button>
+    <button id="addColumn">Add Column</button>
+  </div>
+  
+  <div id="canvas" class="dropzone">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

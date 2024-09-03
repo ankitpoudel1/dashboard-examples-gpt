@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abstract Colorful Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #1b1b1b; /* Dark background */
+      color: #ffffff; /* White text */
+      font-family: 'Courier New', monospace; /* Futuristic typeface */
+    }
+    .neon {
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.6);
+    }
+    .neon-border {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+  </style>
+</head>
+<body class="p-6">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between mb-6">
+    <h1 class="text-3xl font-bold neon">Abstract Dashboard</h1>
+    <button class="px-4 py-2 bg-blue-600 text-white rounded-md neon-border">Add New</button>
+  </header>
+
+  <!-- Main Content -->
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+    <!-- KPI Cards with different colors -->
+    <div class="p-4 shadow-md rounded-md flex items-center bg-blue-800 neon-border">
+      <div class="flex-1">
+        <h2 class="text-sm font-medium neon">Total Sales</h2>
+        <p class="text-2xl font-bold text-white neon">$5,240</p>
+      </div>
+      <div class="text-blue-300 neon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="p-4 shadow-md rounded-md flex items-center bg-red-800 neon-border">
+      <div class="flex-1">
+        <h2 class="text-sm font-medium neon">New Users</h2>
+        <p class="text-2xl font-bold text-white neon">1,200</p>
+      </div>
+      <div class="text-red-300 neon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="p-4 shadow-md rounded-md flex items-center bg-green-800 neon-border">
+      <div class="flex-1">
+        <h2 class="text-sm font-medium neon">Pending Orders</h2>
+        <p class="text-2xl font-bold text-white neon">34</p>
+      </div>
+      <div class="text-green-300 neon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="p-4 shadow-md rounded-md flex items-center bg-yellow-800 neon-border">
+      <div class="flex-1">
+        <h2 class="text-sm font-medium neon">Revenue Growth</h2>
+        <p class="text-2xl font-bold text-white neon">15%</p>
+      </div>
+      <div class="text-yellow-300 neon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Additional KPI Cards -->
+    <div class="p-4 shadow-md rounded-md flex items-center bg-purple-800 neon-border">
+      <div class="flex-1">
+        <h2 class="text-sm font-medium neon">Customer Feedback</h2>
+        <p class="text-2xl font-bold text-white neon">85%</p>
+      </div>
+      <div class="text-purple-300 neon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="p-4 shadow-md rounded-md flex items-center bg-pink-800 neon-border">
+      <div class="flex-1">
+        <h2 class="text-sm font-medium neon">Support Tickets</h2>
+        <p class="text-2xl font-bold text-white neon">42</p>
+      </div>
+      <div class="text-pink-300 neon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="p-4 shadow-md rounded-md flex items-center bg-indigo-800 neon-border">
+      <div class="flex-1">
+        <h2 class="text-sm font-medium neon">Website Traffic</h2>
+        <p class="text-2xl font-bold text-white neon">7,890</p>
+      </div>
+      <div class="text-indigo-300 neon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="p-4 shadow-md rounded-md flex items-center bg-teal-800 neon-border">
+      <div class="flex-1">
+        <h2 class="text-sm font-medium neon">Conversion Rate</h2>
+        <p class="text-2xl font-bold text-white neon">4.5%</p>
+      </div>
+      <div class="text-teal-300 neon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form and Table -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <!-- Form -->
+    <div class="p-6 shadow-md rounded-md neon-border bg-black bg-opacity-50">
+      <h2 class="text-lg font-semibold mb-4 neon">Add New User</h2>
+      <form>
+        <div class="mb-4">
+          <label class="block text-sm font-medium mb-2 neon" for="username">Username</label>
+          <input class="w-full px-4 py-2 border rounded-md bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-blue-400" type="text" id="username" name="username" placeholder="Enter username">
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-medium mb-2 neon" for="email">Email</label>
+          <input class="w-full px-4 py-2 border rounded-md bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-blue-400" type="email" id="email" name="email" placeholder="Enter email">
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-medium mb-2 neon" for="role">Role</label>
+          <select class="w-full px-4 py-2 border rounded-md bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-blue-400" id="role" name="role">
+            <option class="bg-black" value="admin">Admin</option>
+            <option class="bg-black" value="user">User</option>
+          </select>
+        </div>
+        <button class="w-full bg-blue-600 text-white py-2 rounded-md neon-border">Submit</button>
+      </form>
+    </div>
+
+    <!-- Table -->
+    <div class="p-6 shadow-md rounded-md neon-border bg-black bg-opacity-50">
+      <h2 class="text-lg font-semibold mb-4 neon">User List</h2>
+      <table class="min-w-full bg-transparent">
+        <thead>
+          <tr>
+            <th class="py-2 px-4 border-b text-left text-blue-400 font-medium">Username</th>
+            <th class="py-2 px-4 border-b text-left text-blue-400 font-medium">Email</th>
+            <th class="py-2 px-4 border-b text-left text-blue-400 font-medium">Role</th>
+            <th class="py-2 px-4 border-b text-left text-blue-400 font-medium">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hover:bg-blue-800">
+            <td class="py-2 px-4 border-b neon">john_doe</td>
+            <td class="py-2 px-4 border-b neon">john@example.com</td>
+            <td class="py-2 px-4 border-b neon">Admin</td>
+            <td class="py-2 px-4 border-b">
+              <button class="text-blue-500 neon">Edit</button>
+              <button class="text-red-500 ml-2 neon">Delete</button>
+            </td>
+          </tr>
+          <!-- More rows can be added here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>

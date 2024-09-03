@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff6b6b, #f0e130, #1dd1a1, #54a0ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .dashboard-container {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: white;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-section,
+  .table-section,
+  .list-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input,
+  select,
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  input:focus,
+  select:focus,
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hidden-select {
+    display: none; /* Hide the default select element */
+  }
+  
+  /* Custom styling for the select dropdown */
+  .custom-select-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .custom-select {
+    background: linear-gradient(45deg, #ff6b6b, #f0e130);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s ease;
+  }
+  
+  .custom-select-option {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: none; /* Initially hide options */
+  }
+  
+  .custom-select.active .custom-select-option {
+    display: block; /* Show options when select is active */
+  }
+  
+  .custom-select-option:hover {
+    background-color: rgba(240, 225, 48, 0.8);
+  }
+  
+  button {
+    background-color: #1dd1a1;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #54a0ff;
+  }
+  
+  .table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table-section th,
+  .table-section td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table-section th {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .table-btn:hover {
+    background-color: #f0e130;
+  }
+  
+  .list-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-section ul li {
+    background-color: #1dd1a1;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .list-section ul li:hover {
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between mb-6">
+    <h1 class="text-2xl font-bold">Dashboard</h1>
+    <button class="px-4 py-2 bg-blue-600 text-white rounded-md">Add New</button>
+  </header>
+
+  <!-- Main Content -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+    <!-- KPI Cards -->
+    <div class="bg-white p-4 shadow-md rounded-md flex items-center">
+      <div class="flex-1">
+        <h2 class="text-gray-500 text-sm font-medium">Total Sales</h2>
+        <p class="text-xl font-bold text-gray-800">$5,240</p>
+      </div>
+      <div class="text-green-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="bg-white p-4 shadow-md rounded-md flex items-center">
+      <div class="flex-1">
+        <h2 class="text-gray-500 text-sm font-medium">New Users</h2>
+        <p class="text-xl font-bold text-gray-800">1,200</p>
+      </div>
+      <div class="text-blue-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="bg-white p-4 shadow-md rounded-md flex items-center">
+      <div class="flex-1">
+        <h2 class="text-gray-500 text-sm font-medium">Pending Orders</h2>
+        <p class="text-xl font-bold text-gray-800">34</p>
+      </div>
+      <div class="text-red-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form and Table -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <!-- Form -->
+    <div class="bg-white p-6 shadow-md rounded-md">
+      <h2 class="text-lg font-semibold mb-4">Add New User</h2>
+      <form>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-medium mb-2" for="username">Username</label>
+          <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" type="text" id="username" name="username" placeholder="Enter username">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-medium mb-2" for="email">Email</label>
+          <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" type="email" id="email" name="email" placeholder="Enter email">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-medium mb-2" for="role">Role</label>
+          <select class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" id="role" name="role">
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+          </select>
+        </div>
+        <button class="w-full bg-blue-600 text-white py-2 rounded-md">Submit</button>
+      </form>
+    </div>
+
+    <!-- Table -->
+    <div class="bg-white p-6 shadow-md rounded-md">
+      <h2 class="text-lg font-semibold mb-4">User List</h2>
+      <table class="min-w-full bg-white">
+        <thead>
+          <tr>
+            <th class="py-2 px-4 border-b text-left text-gray-700 font-medium">Username</th>
+            <th class="py-2 px-4 border-b text-left text-gray-700 font-medium">Email</th>
+            <th class="py-2 px-4 border-b text-left text-gray-700 font-medium">Role</th>
+            <th class="py-2 px-4 border-b text-left text-gray-700 font-medium">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="py-2 px-4 border-b">john_doe</td>
+            <td class="py-2 px-4 border-b">john@example.com</td>
+            <td class="py-2 px-4 border-b">Admin</td>
+            <td class="py-2 px-4 border-b">
+              <button class="text-blue-500">Edit</button>
+              <button class="text-red-500 ml-2">Delete</button>
+            </td>
+          </tr>
+          <!-- More rows can be added here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>

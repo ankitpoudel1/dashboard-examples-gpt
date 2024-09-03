@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: #c3c7cb;
+}
+
+.file-manager {
+    width: 800px;
+    margin: 50px auto;
+    border: 2px solid #7a96df;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.title-bar {
+    background-color: #000080;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-bar-text {
+    font-weight: bold;
+}
+
+.title-bar-controls button {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+}
+
+.menu-bar {
+    display: flex;
+    background-color: #e4e4e4;
+    padding: 5px;
+    border-bottom: 1px solid #7a96df;
+}
+
+.menu-item {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.address-bar {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #7a96df;
+}
+
+.address-bar-label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.address-bar-input {
+    flex: 1;
+    padding: 3px;
+    border: 1px solid #7a96df;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #e4e4e4;
+    padding: 10px;
+    border-right: 1px solid #7a96df;
+    float: left;
+    height: 400px; /* Adjust this height as needed */
+    box-sizing: border-box;
+}
+
+.sidebar-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.content-area {
+    padding: 10px;
+    margin-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.file-icon {
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+}
+
+.file-icon img {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+.file-icon p {
+    margin: 5px 0 0;
+}

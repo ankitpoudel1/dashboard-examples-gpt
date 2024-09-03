@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tron-Inspired Dashboard</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #000;
+      color: #00f9ff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    /* Neon Glow Effects */
+    h1,
+    h2,
+    h3,
+    p,
+    a,
+    li {
+      text-shadow: 0 0 5px #00f9ff, 0 0 10px #00f9ff, 0 0 20px #00f9ff, 0 0 40px #00f9ff;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      max-width: 1200px;
+      border: 2px solid #00f9ff;
+      padding: 20px;
+      border-radius: 10px;
+      background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 100%);
+      box-shadow: 0 0 20px #00f9ff;
+    }
+
+    .sidebar {
+      width: 220px;
+      border-right: 2px solid #00f9ff;
+      padding: 10px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar li {
+      margin: 15px 0;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border: 1px solid #00f9ff;
+      border-radius: 8px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar li:hover {
+      background-color: rgba(0, 249, 255, 0.1);
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    /* Dashboard Cards */
+    .dashboard-card {
+      background-color: rgba(0, 0, 0, 0.6);
+      border: 1px solid #00f9ff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 30%;
+      min-width: 250px;
+      position: relative;
+      text-align: center;
+      box-shadow: 0 0 15px #00f9ff;
+      transition: transform 0.3s ease;
+    }
+
+    .dashboard-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Buttons */
+    .neon-button {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #00f9ff;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #00f9ff;
+      border-radius: 5px;
+      text-shadow: 0 0 10px #00f9ff;
+      box-shadow: 0 0 10px #00f9ff, inset 0 0 10px #00f9ff;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .neon-button:hover {
+      background-color: rgba(0, 249, 255, 0.2);
+    }
+
+    /* Lists and Widgets */
+    .list-section {
+      background-color: rgba(0, 0, 0, 0.7);
+      border: 1px solid #00f9ff;
+      border-radius: 10px;
+      padding: 15px;
+      width: 48%;
+      box-shadow: 0 0 15px #00f9ff;
+    }
+
+    .list-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .list-section li {
+      padding: 8px;
+      border-bottom: 1px solid #00f9ff;
+      transition: background-color 0.3s ease;
+    }
+
+    .list-section li:hover {
+      background-color: rgba(0, 249, 255, 0.1);
+    }
+
+    /* Retro Grid Background */
+    .grid-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(0deg, transparent 24%, #00f9ff 25%, #00f9ff 26%, transparent 27%, transparent),
+        linear-gradient(90deg, transparent 24%, #00f9ff 25%, #00f9ff 26%, transparent 27%, transparent);
+      background-size: 50px 50px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main-content {
+        width: 100%;
+      }
+
+      .list-section {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .dashboard-card {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Background Grid -->
+  <div class="grid-bg"></div>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Tron Dashboard</h2>
+      <ul>
+        <li>Dashboard</li>
+        <li>Inventory</li>
+        <li>Expenses</li>
+        <li>Sales</li>
+        <li>Customers</li>
+        <li>Settings</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Dashboard Cards -->
+      <div class="dashboard-card">
+        <h3>Total Sales</h3>
+        <p>$50,000</p>
+        <a href="#" class="neon-button">View Details</a>
+      </div>
+
+      <div class="dashboard-card">
+        <h3>Inventory Levels</h3>
+        <p>1200 Items</p>
+        <a href="#" class="neon-button">View Details</a>
+      </div>
+
+      <div class="dashboard-card">
+        <h3>Monthly Expenses</h3>
+        <p>$15,000</p>
+        <a href="#" class="neon-button">View Details</a>
+      </div>
+
+      <!-- Additional Sections -->
+      <div class="list-section">
+        <h4>Recent Orders</h4>
+        <ul>
+          <li>Order #1024 - $120.50</li>
+          <li>Order #1023 - $99.99</li>
+          <li>Order #1022 - $85.00</li>
+          <li>Order #1021 - $150.00</li>
+        </ul>
+      </div>
+
+      <div class="list-section">
+        <h4>System Notifications</h4>
+        <ul>
+          <li>Server maintenance scheduled for 2 AM.</li>
+          <li>New user registration is active.</li>
+          <li>Product update: New items added to inventory.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

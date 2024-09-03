@@ -1,0 +1,90 @@
+body {
+    background-color: black;
+    color: #00FF00; /* Neon green text color */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    border: 2px solid #00FF00;
+    box-shadow: 0 0 10px #00FF00;
+}
+
+.sidebar {
+    width: 200px;
+    border-right: 2px solid #00FF00;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-item {
+    padding: 10px;
+    border: 1px solid #00FF00;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #005500;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header, .footer {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #00FF00;
+}
+
+.footer {
+    border-top: 1px solid #00FF00;
+    border-bottom: none;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    border: 1px solid #00FF00;
+    padding: 15px;
+    box-shadow: 0 0 5px #00FF00;
+}
+
+.card-title {
+    font-weight: bold;
+    border-bottom: 1px solid #00FF00;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.card-content {
+    line-height: 1.5;
+}
+
+.command-line {
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,300 @@
+/* 
+Base Styles 
+-----------------------------------
+These are the foundational styles that set the background, 
+font, and animations for the overall page design.
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff6b6b, #f0e130, #1dd1a1, #54a0ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* 
+  Login Form Styles 
+  -----------------------------------
+  Responsive styles for a login form that fits within 
+  the colorful abstract design.
+  */
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-form button {
+    padding: 10px;
+    background: linear-gradient(45deg, #ff6b6b, #f0e130);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .login-form button:hover {
+    background: linear-gradient(45deg, #54a0ff, #1dd1a1);
+  }
+  
+  .login-footer {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .login-footer a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 
+  Dashboard and Sidebar Styles 
+  -----------------------------------
+  Styling for the dashboard layout, including the sidebar 
+  and main content areas.
+  */
+  
+  .dashboard-container {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: white;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* 
+  Content Styles (Forms, Tables, Lists) 
+  -----------------------------------
+  Styles for different content types within the dashboard.
+  */
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-section,
+  .table-section,
+  .list-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .table-btn:hover {
+    background-color: #f0e130;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background-color: #1dd1a1;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  ul li:hover {
+    transform: scale(1.05);
+  }
+  
+  /* 
+  Custom Dropdown Styles 
+  -----------------------------------
+  Custom dropdown style to replace the default select element 
+  with a more visually integrated design.
+  */
+  
+  .hidden-select {
+    display: none; /* Hide the default select element */
+  }
+  
+  .custom-select-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .custom-select {
+    background: linear-gradient(45deg, #ff6b6b, #f0e130);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s ease;
+  }
+  
+  .custom-select-option {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: none; /* Initially hide options */
+  }
+  
+  .custom-select.active .custom-select-option {
+    display: block; /* Show options when select is active */
+  }
+  
+  .custom-select-option:hover {
+    background-color: rgba(240, 225, 48, 0.8);
+  }
+  
+  /* 
+  Responsive Adjustments 
+  -----------------------------------
+  Media queries for responsive design on smaller screens.
+  */
+  
+  @media screen and (max-width: 480px) {
+    .login-form {
+      padding: 20px;
+    }
+  
+    .login-form h2 {
+      font-size: 24px;
+    }
+  
+    .login-form input,
+    .login-form button {
+      font-size: 14px;
+    }
+  
+    .login-footer {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows XP File Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="file-manager">
+        <!-- Title Bar -->
+        <div class="title-bar">
+            <div class="title-bar-text">My Computer</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+
+        <!-- Menu Bar -->
+        <div class="menu-bar">
+            <div class="menu-item">File</div>
+            <div class="menu-item">Edit</div>
+            <div class="menu-item">View</div>
+            <div class="menu-item">Go</div>
+            <div class="menu-item">Favorites</div>
+            <div class="menu-item">Tools</div>
+            <div class="menu-item">Help</div>
+        </div>
+
+        <!-- Address Bar -->
+        <div class="address-bar">
+            <span class="address-bar-label">Address</span>
+            <input type="text" class="address-bar-input" value="C:\My Computer">
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-item">My Documents</div>
+            <div class="sidebar-item">My Pictures</div>
+            <div class="sidebar-item">My Music</div>
+            <div class="sidebar-item">Local Disk (C:)</div>
+            <div class="sidebar-item">Local Disk (D:)</div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            <div class="file-icon">
+                <img src="folder-icon.png" alt="Folder Icon">
+                <p>Documents</p>
+            </div>
+            <div class="file-icon">
+                <img src="folder-icon.png" alt="Folder Icon">
+                <p>Pictures</p>
+            </div>
+            <div class="file-icon">
+                <img src="folder-icon.png" alt="Folder Icon">
+                <p>Music</p>
+            </div>
+            <div class="file-icon">
+                <img src="file-icon.png" alt="File Icon">
+                <p>Resume.doc</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

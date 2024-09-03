@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Abstract Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="header">
+        <h1>Welcome to Your Dashboard</h1>
+      </div>
+      <div class="content">
+        <!-- Form Section -->
+        <div class="form-section">
+          <h3>Form Example</h3>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            
+            <label for="color">Favorite Color:</label>
+            <!-- Custom Select Dropdown -->
+            <div class="custom-select-container">
+              <div class="custom-select" id="color-select">
+                <div class="custom-select-option">Red</div>
+                <div class="custom-select-option">Green</div>
+                <div class="custom-select-option">Blue</div>
+              </div>
+              <select id="color" class="hidden-select">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+              </select>
+            </div>
+            
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <!-- Table Section -->
+        <div class="table-section">
+          <h3>Data Table</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+                <td><button class="table-btn">Edit</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+                <td><button class="table-btn">Edit</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- List Section -->
+        <div class="list-section">
+          <h3>Tasks</h3>
+          <ul>
+            <li>Task 1: Complete dashboard design</li>
+            <li>Task 2: Review code quality</li>
+            <li>Task 3: Deploy to server</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

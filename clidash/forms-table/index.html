@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>80s Terminal Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="menu-item">Dashboard</div>
+            <div class="menu-item">System Info</div>
+            <div class="menu-item">Logs</div>
+            <div class="menu-item">Settings</div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="title">SYSTEM MONITOR</div>
+            </div>
+            
+            <div class="content">
+                <!-- Dashboard Cards -->
+                <div class="card">
+                    <div class="card-title">CPU USAGE</div>
+                    <div class="card-content">45%</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">MEMORY</div>
+                    <div class="card-content">256MB / 1024MB</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">NETWORK TRAFFIC</div>
+                    <div class="card-content">UP: 150KB/s | DOWN: 120KB/s</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">SYSTEM LOG</div>
+                    <div class="card-content">
+                        <p>[INFO] System boot successful.</p>
+                        <p>[WARN] High CPU usage detected.</p>
+                        <p>[ERROR] Network connection lost.</p>
+                    </div>
+                </div>
+                
+                <!-- Form Section -->
+                <div class="card">
+                    <div class="card-title">Data Entry Form</div>
+                    <div class="card-content">
+                        <form id="dataForm">
+                            <label for="field1">Field 1:</label>
+                            <input type="text" id="field1" name="field1"><br>
+                            
+                            <label for="field2">Field 2:</label>
+                            <input type="text" id="field2" name="field2"><br>
+                            
+                            <label for="field3">Field 3:</label>
+                            <input type="text" id="field3" name="field3"><br>
+                            
+                            <label for="dropdown">Select Option:</label>
+                            <select id="dropdown" name="dropdown">
+                                <option value="Option1">Option 1</option>
+                                <option value="Option2">Option 2</option>
+                                <option value="Option3">Option 3</option>
+                            </select><br>
+                            
+                            <label for="field5">Field 5:</label>
+                            <input type="text" id="field5" name="field5"><br>
+                            
+                            <label for="field6">Field 6:</label>
+                            <input type="text" id="field6" name="field6"><br>
+                            
+                            <label for="field7">Field 7:</label>
+                            <input type="text" id="field7" name="field7"><br>
+                            
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Table Section -->
+                <div class="card">
+                    <div class="card-title">Data Table</div>
+                    <div class="card-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Field 1</th>
+                                    <th>Field 2</th>
+                                    <th>Field 3</th>
+                                    <th>Option</th>
+                                    <th>Field 5</th>
+                                    <th>Field 6</th>
+                                    <th>Field 7</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dataTable">
+                                <!-- Data rows will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="command-line">C:\></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

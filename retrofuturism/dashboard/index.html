@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Retro Futurism Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Navbar -->
+            <header class="navbar">
+                <h1>Retro Futurism Dashboard</h1>
+                <div class="nav-right">
+                    <input type="text" placeholder="Search...">
+                    <button class="profile-btn">Profile</button>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <main class="content">
+                <!-- Dashboard Cards -->
+                <section class="cards-section">
+                    <div class="card">
+                        <h3>Card 1</h3>
+                        <p>Some content here...</p>
+                    </div>
+                    <div class="card">
+                        <h3>Card 2</h3>
+                        <p>Some content here...</p>
+                    </div>
+                    <div class="card">
+                        <h3>Card 3</h3>
+                        <p>Some content here...</p>
+                    </div>
+                </section>
+
+                <!-- Form Section -->
+                <section class="form-section">
+                    <h2>Add New Entry</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="text1">Text Field 1:</label>
+                            <input type="text" id="text1" name="text1">
+                        </div>
+                        <div class="form-group">
+                            <label for="text2">Text Field 2:</label>
+                            <input type="text" id="text2" name="text2">
+                        </div>
+                        <div class="form-group">
+                            <label for="select">Select Option:</label>
+                            <select id="select" name="select">
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>
+
+                <!-- Table Section -->
+                <section class="table-section">
+                    <h2>Data Table</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>
+                                    <button class="edit-btn">Edit</button>
+                                    <button class="delete-btn">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jane Smith</td>
+                                <td>
+                                    <button class="edit-btn">Edit</button>
+                                    <button class="delete-btn">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
